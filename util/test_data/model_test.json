@@ -1,0 +1,268 @@
+{
+    "test_cases" : [
+        {
+            "reels" : [
+                ["A", "B", "C", "D", "E"],
+                ["F", "A", "F", "B", "C"],
+                ["D", "E", "A", "G", "A"]
+            ],
+        
+            "lines" : [
+                {
+                    "line": 1, 
+                    "positions": [
+                        {"row": 0, "col": 0},
+                        {"row": 1, "col": 1},
+                        {"row": 2, "col": 2},
+                        {"row": 1, "col": 3},
+                        {"row": 0, "col": 4}
+                    ]
+                },
+                {
+                    "line": 2, 
+                    "positions": [
+                        {"row": 2, "col": 0},
+                        {"row": 1, "col": 1},
+                        {"row": 0, "col": 2},
+                        {"row": 1, "col": 3},
+                        {"row": 2, "col": 4}
+                    ]
+                },
+                {
+                    "line": 3, 
+                    "positions": [
+                        {"row": 1, "col": 0},
+                        {"row": 2, "col": 1},
+                        {"row": 1, "col": 2},
+                        {"row": 0, "col": 3},
+                        {"row": 1, "col": 4}
+                    ]
+                }
+            ],
+            "payouts" : [
+                {
+                    "symbol": "A",
+                    "payout": [0, 0, 50, 100, 200]
+                },
+                {
+                    "symbol": "B",
+                    "payout": [0, 0, 40, 80, 160]
+                },
+                {
+                    "symbol": "C",
+                    "payout": [0, 0, 30, 60, 120]
+                },
+                {
+                    "symbol": "D",
+                    "payout": [0, 0, 20, 40, 80]
+                },
+                {
+                    "symbol": "E",
+                    "payout": [0, 0, 10, 20, 40]
+                },
+                {
+                    "symbol": "F",
+                    "payout": [0, 0, 5, 10, 20]
+                },
+                {
+                    "symbol": "G",
+                    "payout": [0, 0, 2, 5, 10]
+                }
+            ]
+        
+            
+        },
+        {
+            "reels" : [
+                ["B", "C", "C", "D", "E"],
+                ["F", "F", "F", "F", "F"],
+                ["D", "E", "A", "G", "A"]
+            ],
+        
+            "lines" : [
+                {
+                    "line": 1, 
+                    "positions": [
+                        {"row": 0, "col": 0},
+                        {"row": 1, "col": 1},
+                        {"row": 2, "col": 2},
+                        {"row": 1, "col": 3},
+                        {"row": 0, "col": 4}
+                    ]
+                },
+                {
+                    "line": 2, 
+                    "positions": [
+                        {"row": 2, "col": 0},
+                        {"row": 1, "col": 1},
+                        {"row": 0, "col": 2},
+                        {"row": 1, "col": 3},
+                        {"row": 2, "col": 4}
+                    ]
+                },
+                {
+                    "line": 3, 
+                    "positions": [
+                        {"row": 1, "col": 0},
+                        {"row": 2, "col": 1},
+                        {"row": 1, "col": 2},
+                        {"row": 0, "col": 3},
+                        {"row": 1, "col": 4}
+                    ]
+                },
+                {
+                    "line": 4, 
+                    "positions": [
+                        {"row": 1, "col": 0},
+                        {"row": 1, "col": 1},
+                        {"row": 1, "col": 2},
+                        {"row": 1, "col": 3},
+                        {"row": 1, "col": 4}
+                    ]
+                },
+                {
+                    "line": 5, 
+                    "positions": [
+                        {"row": 0, "col": 0},
+                        {"row": 0, "col": 1},
+                        {"row": 0, "col": 2},
+                        {"row": 0, "col": 3},
+                        {"row": 0, "col": 4}
+                    ]
+                }
+            ],
+            "payouts" : [
+                {
+                    "symbol": "A",
+                    "payout": [0, 0, 50, 100, 200]
+                },
+                {
+                    "symbol": "B",
+                    "payout": [0, 0, 40, 80, 160]
+                },
+                {
+                    "symbol": "C",
+                    "payout": [0, 0, 30, 60, 120]
+                },
+                {
+                    "symbol": "D",
+                    "payout": [0, 0, 20, 40, 80]
+                },
+                {
+                    "symbol": "E",
+                    "payout": [0, 0, 10, 20, 40]
+                },
+                {
+                    "symbol": "F",
+                    "payout": [0, 0, 5, 10, 20]
+                },
+                {
+                    "symbol": "G",
+                    "payout": [0, 0, 2, 5, 10]
+                }
+            ]
+        
+            
+        },
+        {
+            "reels" : [
+                ["Z", "Z", "Z", "Z", "Z"],
+                ["F", "D", "F", "B", "C"],
+                ["D", "E", "A", "G", "A"]
+            ],
+        
+            "lines" : [
+                {
+                    "line": 1, 
+                    "positions": [
+                        {"row": 0, "col": 0},
+                        {"row": 1, "col": 1},
+                        {"row": 2, "col": 2},
+                        {"row": 1, "col": 3},
+                        {"row": 0, "col": 4}
+                    ]
+                },
+                {
+                    "line": 2, 
+                    "positions": [
+                        {"row": 2, "col": 0},
+                        {"row": 1, "col": 1},
+                        {"row": 0, "col": 2},
+                        {"row": 1, "col": 3},
+                        {"row": 2, "col": 4}
+                    ]
+                },
+                {
+                    "line": 3, 
+                    "positions": [
+                        {"row": 1, "col": 0},
+                        {"row": 2, "col": 1},
+                        {"row": 1, "col": 2},
+                        {"row": 0, "col": 3},
+                        {"row": 1, "col": 4}
+                    ]
+                }
+            ],
+            "payouts" : [
+                {
+                    "symbol": "A",
+                    "payout": [0, 0, 50, 100, 200]
+                },
+                {
+                    "symbol": "B",
+                    "payout": [0, 0, 40, 80, 160]
+                },
+                {
+                    "symbol": "C",
+                    "payout": [0, 0, 30, 60, 120]
+                },
+                {
+                    "symbol": "D",
+                    "payout": [0, 0, 20, 40, 80]
+                },
+                {
+                    "symbol": "E",
+                    "payout": [0, 0, 10, 20, 40]
+                },
+                {
+                    "symbol": "F",
+                    "payout": [0, 0, 5, 10, 20]
+                },
+                {
+                    "symbol": "G",
+                    "payout": [0, 0, 2, 5, 10]
+                }
+            ]
+        }
+    ],
+
+    "expected_results" : [
+        {
+            "result" : {
+                "lines": [
+                    {"line": 1, "payout": 50},
+                    {"line": 2, "payout": 0},
+                    {"line": 3, "payout": 0}
+                ],
+                "total": 50
+            },
+            "expected_err" : null
+        },
+        {
+            "result" : {
+                "lines": [
+                    {"line": 1, "payout": 0},
+                    {"line": 2, "payout": 0},
+                    {"line": 3, "payout": 0},
+                    {"line": 4, "payout": 20},
+                    {"line": 5, "payout": 0}
+                ],
+                "total": 20
+            },
+            "expected_err" : null
+        },
+        {
+            "expected_err" : null
+        }
+    ]
+}
