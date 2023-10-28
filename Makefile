@@ -3,7 +3,7 @@ BINARY_NAME = igaming-service
 install:
 	@go get
 
-build:
+build: install
 	@go build -o bin/${BINARY_NAME}
 	@./bin/${BINARY_NAME}
 
