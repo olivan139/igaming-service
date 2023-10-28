@@ -1,7 +1,7 @@
 package util
 
 import (
-	"fmt"
+	"igaming-service/errs"
 	"igaming-service/models"
 )
 
@@ -41,7 +41,7 @@ func GetPayoff(conf models.Configurations) (models.PayoutResponse, error) {
 
 func symbolInReels(reels models.Reels, row int, col int) (string, error) {
 	if row >= len(reels) || col >= len(reels[row]) {
-		return "", fmt.Errorf("reels index out of range: row=%v, col=%v", row, col)
+		return "", errs.ErrOutOfRange
 	}
 
 	return reels[row][col], nil
@@ -49,7 +49,7 @@ func symbolInReels(reels models.Reels, row int, col int) (string, error) {
 
 func getLinePayoff(line []string, payouts models.Payouts) (int, error) {
 	if len(line) == 0 {
-		return 0, fmt.Errorf("line not found")
+		return 0, errs.ErrLineNotFound
 	}
 
 	symbol := line[0]
@@ -61,11 +61,11 @@ func getLinePayoff(line []string, payouts models.Payouts) (int, error) {
 	payout, exists := payouts.GetVal(symbol)
 
 	if !exists {
-		return 0, fmt.Errorf("undefined symbol: %v", symbol)
+		return 0, errs.ErrUndefinedSymbol
 	}
 
 	if i > len(line) {
-		return 0, fmt.Errorf("index out of range")
+		return 0, errs.ErrOutOfRange
 	}
 
 	return payout[i-1], nil

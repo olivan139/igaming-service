@@ -2,7 +2,7 @@ package util
 
 import (
 	"encoding/json"
-	"fmt"
+	"igaming-service/errs"
 	"igaming-service/models"
 	"io"
 	"os"
@@ -37,7 +37,7 @@ func parseJSON(filename string) (MathTest, error) {
 
 func TestGetPayoff(t *testing.T) {
 	data, err := parseJSON("test_data/model_test.json")
-	data.ExpResults[len(data.ExpResults)-1].ExpError = fmt.Errorf("undefined symbol: Z")
+	data.ExpResults[len(data.ExpResults)-1].ExpError = errs.ErrUndefinedSymbol
 
 	if err != nil {
 		t.Errorf("unable to open json test file")
@@ -46,7 +46,7 @@ func TestGetPayoff(t *testing.T) {
 	for i := range data.TestCases {
 		result, err := GetPayoff(data.TestCases[i])
 
-		if err != nil && data.ExpResults[i].ExpError != nil && err.Error() != data.ExpResults[i].ExpError.Error() {
+		if data.ExpResults[i].ExpError != err {
 			t.Errorf("unexpected error %v\nexpected: %v", err, data.ExpResults[i].ExpError)
 		}
 
